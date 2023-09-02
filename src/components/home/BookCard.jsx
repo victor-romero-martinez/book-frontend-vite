@@ -1,0 +1,13 @@
+/* eslint-disable react/prop-types */
+
+import BookSingleCar from "./BookSingleCar";
+
+export default function BookCard({ books }) {
+  return (
+    <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+      {books.map((item) => (
+        <BookSingleCar key={item._id} book={item} />
+      ))}
+    </div>
+  );
+}

@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-[#2a2a30] text-slate-100
+}
+
+input {
+  @apply text-slate-800
+}
