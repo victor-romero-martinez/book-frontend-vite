@@ -31,7 +31,7 @@ export default function Home() {
   }, [theme]);
 
   const handleChangeTheme = () => {
-    setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
+    setTheme((prevTheme) => (prevTheme === "light" ? "light" : "dark"));
   };
 
   useEffect(() => {
