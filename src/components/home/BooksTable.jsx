@@ -9,19 +9,19 @@ export default function BooksTable({ books }) {
     <table className="w-full border-separate border-spacing-2">
       <thead>
         <tr>
-          <th className="border border-slate-600  bg-slate-700 rounded-md">
+          <th className="bg-slate-300 dark:bg-neutral-600 rounded-md">
             N<sup>o</sup>
           </th>
-          <th className="border border-slate-600   bg-slate-700 rounded-md">
+          <th className=" bg-slate-300 dark:bg-neutral-600 rounded-md">
             Title
           </th>
-          <th className="border border-slate-600  bg-slate-700 rounded-md max-md:hidden">
+          <th className="bg-slate-300 dark:bg-neutral-600 rounded-md max-md:hidden">
             Author
           </th>
-          <th className="border border-slate-600  bg-slate-700 rounded-md max-md:hidden">
+          <th className="bg-slate-300 dark:bg-neutral-600 rounded-md max-md:hidden">
             Publish Year
           </th>
-          <th className="border bg-slate-700 border-slate-600 rounded-md">
+          <th className=" bg-slate-300 dark:bg-neutral-600 rounded-md">
             Operatins
           </th>
         </tr>
@@ -44,13 +44,13 @@ export default function BooksTable({ books }) {
             <td className="border border-slate-700 rounded-md text-center">
               <div className="flex justify-center gap-x-4">
                 <Link to={`/books/details/${book._id}`}>
-                  <BsInfoCircle className="text-2xl text-green-600 hover:text-slate-200" />
+                  <BsInfoCircle className="text-2xl text-green-600 hover:text-slate-800 dark:hover:text-slate-200" />
                 </Link>
                 <Link to={`/books/edit/${book._id}`}>
-                  <AiOutlineEdit className="text-2xl text-yellow-600 hover:text-slate-200" />
+                  <AiOutlineEdit className="text-2xl text-yellow-600 hover:text-slate-800 dark:hover:text-slate-200" />
                 </Link>
                 <Link to={`/books/delete/${book._id}`}>
-                  <MdAutoDelete className="text-2xl text-red-600 hover:text-slate-200" />
+                  <MdAutoDelete className="text-2xl text-red-600 hover:text-slate-800 dark:hover:text-slate-200" />
                 </Link>
               </div>
             </td>

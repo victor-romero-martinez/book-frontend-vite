@@ -55,7 +55,7 @@ export default function EdiftBook() {
     <div className="p-4">
       <BackButton />
       <div className="flex flex-col justify-center w-full">
-        <h1 className="text-3xl my-4">Edit Book</h1>
+        <h1 className="text-3xl my-4 text-center">Edit Book</h1>
         {loadig ? <Spinner /> : ""}
         <div className="flex flex-col border-2 border-sky-400 rounded-xl 2-[600px] p-4 mx-auto">
           <div className="my-4">
@@ -68,7 +68,7 @@ export default function EdiftBook() {
                   return { ...prev, title: e.target.value };
                 })
               }
-              className="border border-gray-500 px-4 py-2 w-full"
+              className="border border-gray-500 dark:text-slate-700 px-4 py-2 w-full"
             />
           </div>
           <div className="my-4">
@@ -81,7 +81,7 @@ export default function EdiftBook() {
                   return { ...prev, author: e.target.value };
                 })
               }
-              className="border border-gray-500 px-4 py-2 w-full"
+              className="border border-gray-500 dark:text-slate-700 px-4 py-2 w-full"
             />
           </div>
           <div className="my-4">
@@ -94,7 +94,7 @@ export default function EdiftBook() {
                   return { ...prev, publishYear: e.target.value };
                 })
               }
-              className="border border-gray-500 px-4 py-2 w-full"
+              className="border border-gray-500 dark:text-slate-700 px-4 py-2 w-full"
             />
           </div>
           <button

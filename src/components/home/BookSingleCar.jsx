@@ -12,7 +12,7 @@ export default function BookSingleCar({ book }) {
   const [showModal, setShowModal] = useState(false);
 
   return (
-    <div className="border-2 bg-gray-800 border-gray-600 rounded-lg px-4 py-2 m-4 relative hover:shadow-xl">
+    <div className="border-2 bg-slate-200 border-slate-300 dark:bg-gray-800 dark:border-gray-700 rounded-lg px-4 py-2 m-4 relative hover:shadow-xl">
       <h2 className="absolute top-1 right-2 px-4 py-1 bg-red-300 text-slate-900 rounded-lg">
         {book.publishYear}
       </h2>
@@ -27,17 +27,17 @@ export default function BookSingleCar({ book }) {
       </div>
       <div className="flex justify-around items-center gap-x-2 mt-4 p-4">
         <BiShow
-          className="text-3xl text-blue-500 hover:text-slate-200 cursor-pointer"
+          className="text-3xl text-blue-500 hover:text-slate-800 dark:hover:text-slate-200 cursor-pointer"
           onClick={() => setShowModal(true)}
         />
         <Link to={`/books/details/${book._id}`}>
-          <BsInfoCircle className="text-2xl text-green-500 hover:text-slate-200" />
+          <BsInfoCircle className="text-2xl text-green-500 hover:text-slate-800 dark:hover:text-slate-200" />
         </Link>
         <Link to={`/books/edit/${book._id}`}>
-          <AiOutlineEdit className="text-2xl text-yellow-600 hover:text-slate-200" />
+          <AiOutlineEdit className="text-2xl text-yellow-600 hover:text-slate-800 dark:hover:text-slate-200" />
         </Link>
         <Link to={`/books/delete/${book._id}`}>
-          <MdOutlineDelete className="text-2xl text-red-600 hover:text-slate-200" />
+          <MdOutlineDelete className="text-2xl text-red-600 hover:text-slate-800 dark:hover:text-slate-200" />
         </Link>
       </div>
       {showModal && (

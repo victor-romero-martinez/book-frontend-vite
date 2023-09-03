@@ -50,7 +50,7 @@ export default function CreateBooks() {
                   return { ...prev, title: e.target.value };
                 })
               }
-              className="border border-gray-500 px-4 py-2 w-full"
+              className="border border-gray-500 dark:text-slate-700 px-4 py-2 w-full"
             />
           </div>
           <div className="my-4">
@@ -63,7 +63,7 @@ export default function CreateBooks() {
                   return { ...prev, author: e.target.value };
                 })
               }
-              className="border border-gray-500 px-4 py-2 w-full"
+              className="border border-gray-500 dark:text-slate-700 px-4 py-2 w-full"
             />
           </div>
           <div className="my-4">
@@ -76,7 +76,7 @@ export default function CreateBooks() {
                   return { ...prev, publishYear: e.target.value };
                 })
               }
-              className="border border-gray-500 px-4 py-2 w-full"
+              className="border border-gray-500 dark:text-slate-700 px-4 py-2 w-full"
             />
           </div>
           <button
